@@ -10,13 +10,13 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
-    
-    <!-- define your gltf asset -->
- <a-assets>
-    <a-asset-item id="corgi" src="https://sketchfab.com/models/e5b8eccbed404c7d9a4ca55609fa61da/embed"></a-asset-item>
+
+<!-- define your gltf asset -->
+  <a-assets>
+    <a-asset-item id="corgi" src="https://cdn.glitch.com/9da01ca7-44c7-4965-bcb6-055ffa16e768%2Fscene.gltf?v=1582256640990"></a-asset-item>
   </a-assets>
   <!-- use your gltf model -->
-  <a-entity gltf-model="##tree"></a-entity>
+<a-entity gltf-model="###corgi" scale="0.01 0.01 0.01"></a-entity>
     <!-- create your content here. just a box for now -->
 <!--     <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
     <!-- define a camera which will move according to the marker position -->
