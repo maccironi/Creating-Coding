@@ -9,12 +9,15 @@
     </head> 
 
   <body>
- 
     <a-scene embedded arjs>
-      <!-- create your content here. -->
+      <!-- define the marker -->
+      <a-marker preset="hiro">
+          <!-- create your content here. -->
 
+      </a-marker>
+      
       <!-- define a camera which will move according to the marker position -->
-      <a-marker-camera preset='hiro'></a-marker-camera>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
   
