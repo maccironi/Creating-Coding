@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-      <title>My First AR App!</title>
-         <!-- include A-Frame obviously -->
-          <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-         <!-- include ar.js for A-Frame -->
-          <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
-    </head> 
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
+<body>
+  <a-scene embedded arjs>
+    <!-- define the marker -->
+    <a-marker preset="hiro">
+      <!-- create your content here. -->
+    </a-marker>
 
-  <body>
-    <a-scene embedded arjs>
-      <!-- define the marker -->
-      <a-marker preset="hiro">
-          <!-- create your content here. -->
-
-      </a-marker>
-      <!-- define a camera which will move according to the marker position -->
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
-</html>
+    <!-- define a camera which will move according to the marker position -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
