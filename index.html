@@ -7,17 +7,25 @@
     
     <!--peace lillies model--> 
     
-    <a-gltf-model position="0 0 -3" rotation ="0 0 0" src"https://cdn.glitch.global/10bd3c7c-283e-4f7c-8b95-ef8f393011c4/peace_lilies.gltf?v=1660606598498"> </a-gltf-model>
-    
+    <a-gltf-model position="0 0 -3" rotation="0 100 0" src="https://cdn.glitch.global/10bd3c7c-283e-4f7c-8b95-ef8f393011c4/peace_lilies.gltf?v=1660606598498"></a-gltf-model>
+  
     <!-- create your content here. just a box for now -->
     <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
     <!-- define your gltf asset -->
     <a-assets>
-      <a-asset-item id="peace" src="/path/to/peace.gltf"></a-asset-item>
+      <a-asset-item id="peace_lilies" src="/path/to/peace_lilies.gltf"></a-asset-item>
     </a-assets>
     <!-- use your gltf model-->
-    <a-entity gltf-model="##peace"></a-entity>
+    <a-entity gltf-model="##peace_lilies"></a-entity>
+    
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset="hiro"></a-marker-camera>
+    <a-marker-camera type='pattern' url='path/to/Peacecustom="Peace"></a-marker-camera>
+    <a-marker-camera custom="Cactus"></a-marker-camera>
+    <a-marker-camera custom="Zinnias"></a-marker-camera>
+    <a-marker-camera custom="agalonema"></a-marker-camera>
+    <a-marker-camera custom="Houseplant"></a-marker-camera>
+ 
   </a-scene>
+
 </body>
